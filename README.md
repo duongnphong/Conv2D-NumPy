@@ -69,11 +69,6 @@ From left to right:
 
 
 
-![conv2d_low](./assets/conv2d_low.png "conv2d_low")
-
-
-
-![conv2d_high](./assets/conv2d_high.png "conv2d_high")
 
 |3 `conv2d` layers|5 `conv2d` layers|
 |:---:|:---:|
