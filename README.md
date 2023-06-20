@@ -60,12 +60,8 @@ def conv2d(
 |__bias__|A set of 1D vectors of size __output_channels__ representing the bias terms. Each intermidiate outputs of each covolution operation on each `channels` of the input are summed together and added a __bias__ to introduce an offset or shift in the __output__ (__feature maps__).|
 |__ouput__| Also called __feature maps__ is the result obtained after applying convolutional operations to the input data. Each feature map represents a specific learned feature or pattern detected by the convolutional layer.|`out_channels`|
 ### Output Sizing Calculation
-$$
-\text{output\_height} = \frac{{\text{input\_height} - \text{kernel\_size} + 2 \times \text{padding}}}{{\text{stride}}} + 1
-$$
-$$
-\text{output\_width} = \frac{{\text{input\_width} - \text{kernel\_size} + 2 \times \text{padding}}}{{\text{stride}}} + 1
-$$
+`output_height = (input_height - kernel_size + 2 * padding) / stride + 1`
+`output_width = (input_width - kernel_size + 2 * padding) / stride + 1`
 
 ### Examples of an intermediate output
 Input layer is the Red of the `input`. Arguments `kernel_size` = 3, `stride` = 1, `padding` = 0
@@ -76,7 +72,7 @@ Input layer is the Red of the `input`. Arguments `kernel_size` = 3, `stride` = 1
 
 |3 `conv2d` layers|5 `conv2d` layers|
 |:---:|:---:|
-||
+|`kernel_size` = 3, `stride` = 1, `padding` = 0|`kernel_size` = 3, `stride` = 1, `padding` = 1|
 |![low](./assets/conv2d_low.png "low")|![high](./assets/conv2d_high.png "high")|
 
 
