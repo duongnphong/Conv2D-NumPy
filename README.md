@@ -60,7 +60,7 @@ def conv2d(
 |__bias__|A set of 1D vectors of size __output_channels__ representing the bias terms. Each intermidiate outputs of each covolution operation on each `channels` of the input are summed together and added a __bias__ to introduce an offset or shift in the __output__ (__feature maps__).|
 |__ouput__| Also called __feature maps__ is the result obtained after applying convolutional operations to the input data. Each feature map represents a specific learned feature or pattern detected by the convolutional layer.|`out_channels`|
 ### Output Sizing Calculation
-```py
+```python
 #Output height and width are calculated 
 output_height = (input_height - kernel_size + 2 * padding) / stride + 1
 output_width = (input_width - kernel_size + 2 * padding) / stride + 1
