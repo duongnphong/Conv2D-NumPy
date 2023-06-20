@@ -61,6 +61,7 @@ def conv2d(
 |__ouput__| Also called __feature maps__ is the result obtained after applying convolutional operations to the input data. Each feature map represents a specific learned feature or pattern detected by the convolutional layer.|`out_channels`|
 ### Output Sizing Calculation
 `output_height = (input_height - kernel_size + 2 * padding) / stride + 1`
+
 `output_width = (input_width - kernel_size + 2 * padding) / stride + 1`
 
 ### Examples of an intermediate output
