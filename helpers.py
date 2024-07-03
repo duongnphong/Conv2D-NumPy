@@ -14,7 +14,7 @@ def add_padding(image, padding=0):
             mode="constant",
         )
     else:
-        padded_image = image
+        return image
 
     return padded_image
 

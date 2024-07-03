@@ -34,11 +34,11 @@ def conv2d(
 
     """
     if not isinstance(image, np.ndarray):
-        raise TypeError("image should be a of type numpy.ndarray.")
+        raise TypeError("image should be of type numpy.ndarray.")
     if not isinstance(in_channels, int):
-        raise TypeError("in_channels should be a of type int.")
+        raise TypeError("in_channels should be of type int.")
     if not isinstance(out_channels, int):
-        raise TypeError("out_channels should be a of type int.")
+        raise TypeError("out_channels should be of type int.")
     if isinstance(kernel_size, int):
         kernel_size = (kernel_size, kernel_size)
     elif isinstance(kernel_size, tuple) and len(kernel_size) == 1:
