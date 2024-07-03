@@ -62,8 +62,8 @@ def conv2d(
 ### Output Sizing Calculation
 ```py
 #Output height and width are calculated 
-output_height = (input_height - kernel_size + 2 * padding) / stride + 1
-output_width = (input_width - kernel_size + 2 * padding) / stride + 1
+output_height = (input_height - kernel_height + 2 * padding) / stride + 1
+output_width = (input_width - kernel_width + 2 * padding) / stride + 1
 ```
 
 ### Examples of an intermediate output
