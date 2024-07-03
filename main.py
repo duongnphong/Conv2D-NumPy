@@ -1,7 +1,8 @@
-import numpy as np
 import cv2
-from helpers import visualize
+import numpy as np
+
 from conv2d import conv2d
+from helpers import visualize
 
 
 def main():

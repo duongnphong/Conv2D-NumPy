@@ -1,6 +1,7 @@
 import numpy as np
 from tqdm import tqdm
-from helpers import cross_correlation, add_padding
+
+from helpers import add_padding, cross_correlation
 
 
 def conv2d(
@@ -43,7 +44,7 @@ def conv2d(
     elif isinstance(kernel_size, tuple) and len(kernel_size) == 1:
         kernel_size = (kernel_size[0], kernel_size[0])
     elif isinstance(kernel_size, tuple) and len(kernel_size) != 2:
-        raise ValueError("Invalid kernel_size.")  #
+        raise ValueError("Invalid kernel_size.")
 
     image = add_padding(image=image, padding=padding)
 
