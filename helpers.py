@@ -10,7 +10,7 @@ def add_padding(image, padding=0):
         # Create an array for padded image
         padded_image = np.pad(
             image,
-            ((pad_amount, pad_amount), (pad_amount, pad_amount), (1, 1)),
+            ((pad_amount, pad_amount), (pad_amount, pad_amount), (0, 0)),
             mode="constant",
         )
     else:
